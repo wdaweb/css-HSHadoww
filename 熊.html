@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bear {
+            width: 300px;
+            height: 300px;
+            background: #000;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            border-radius: 50%;
+        }
+
+        .bear::before,
+        .bear::after {
+            content: "";
+            width: 60px;
+            height: 60px;
+            background: black;
+            border-radius: 50%;
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        .bear::before {
+            left: 70%;
+            bottom: 80%;
+        }
+
+        .bear::after {
+            right: 70%;
+            bottom: 80%;
+        }
+
+        .face {
+            width: 100px;
+            height: 70px;
+            background: #fff;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            border-radius: 50%;
+        }
+
+        .face::before {
+            content: "";
+            width: 25px;
+            height: 20px;
+            background: #000;
+            border-radius: 50%;
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 35px;
+            margin: auto;
+        }
+
+        .face::after {
+            content: "";
+            width: 50px;
+            height: 20px;
+            background: #000;
+            border-radius: 50%;
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 35px;
+            bottom: 0;
+            margin: auto;
+        }
+
+        .sift::before,
+        .sift::after {
+            content: "";
+            width: 70px;
+            height: 70px;
+            background: red;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        .sift::before {
+            left: 140px;
+        }
+
+        .sift::after {
+            right: 140px;
+        }
+
+        .ear::before,
+        .ear::after {
+            content: "";
+            width: 40px;
+            height: 40px;
+            background: white;
+            border-radius: 50%;
+            position: absolute;
+            margin: auto;
+        }
+
+        .ear::before {
+            left: 135px;
+            bottom: 135px;
+        }
+
+        .ear::after {
+            right: 135px;
+            bottom: 135px;
+            z-index: 1;
+        }
+
+        .eye::before,
+        .eye::after {
+            content: "";
+            width: 60px;
+            height: 60px;
+            background: white;
+            border-radius: 50%;
+            position: absolute;
+            margin: auto;
+        }
+
+        .eye::before {
+            left: 90px;
+            bottom: 60px;
+        }
+
+        .eye::after {
+            right: 90px;
+            bottom: 60px;
+        }
+
+        .eye2::before,
+        .eye2::after {
+            content: "";
+            width: 40px;
+            height: 40px;
+            background: black;
+            border-radius: 50%;
+            position: absolute;
+            margin: auto;
+        }
+
+        .eye2::before {
+            left: 100px;
+            bottom: 70px;
+        }
+
+        .eye2::after {
+            right: 100px;
+            bottom: 70px;
+            z-index: 1;
+        }
+
+        .tatto {
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 50px 50px 0 50px;
+            border-color: #ffffff transparent transparent transparent;
+            top: 110px;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+
+        .tatto::before,
+        .tatto::after {
+            content: "";
+            position: relative;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 20px 20px 0 20px;
+            border-color: #000 transparent transparent transparent;
+            margin: auto;
+        }
+
+        .tatto::before {
+            right: 20px;
+            bottom: 30px;
+        }
+
+        .tatto::after {
+            right: 60px;
+            top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bear">
+        <div class="face">
+            <div class="sift">
+                <div class="ear">
+                    <div class="eye">
+                        <div class="eye2">
+                            <div class="tatto">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
